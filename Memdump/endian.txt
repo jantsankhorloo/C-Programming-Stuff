@@ -1,0 +1,10 @@
+Host Name : lore.cs.purdue.edu
+Architecture (x86, SPARC): Generic_150400-24 sun4u sparc SUNW,Sun-Fire-V445
+Endianess: Big Endian
+
+
+Host Name : data.cs.purdue.edu
+Architecture (x86, SPARC): x86_64 Intel(R) Xeon(R) CPU E5-2650 0 @ 2.00GHz GenuineIntel
+Endianess: Little Endian
+
+

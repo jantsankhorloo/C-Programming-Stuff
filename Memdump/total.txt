@@ -1,0 +1,37 @@
+convert                             : 2   of 2  
+convert 10                          : 2   of 2  
+convert 10 10                       : 2   of 2  
+convert 10 10                       : 2   of 2  
+convert 10 10 10                    : 2   of 2  
+convert 16 10 FF                    : 2   of 2  
+convert 16 10 100                   : 2   of 2  
+convert 10 8 20                     : 2   of 2  
+convert 10 2 127                    : 2   of 2  
+convert 10 16 8191                  : 2   of 2  
+convert 10 25 100077900             : 2   of 2  
+convert 2 16 100010001111           : 2   of 2  
+convert 5 10 1234                   : 2   of 2  
+convert 5 10 123456                 : 2   of 2  
+testmemdump 1                       : 4   of 4  
+testmemdump 2                       : 4   of 4  
+testmemdump 3                       : 4   of 4  
+testmemdump 4                       : 3   of 3  
+testmemdump 5                       : 3   of 3  
+test_mystring test1                 : 3   of 3  
+test_mystring test2                 : 3   of 3  
+test_mystring test3                 : 3   of 3  
+test_mystring test4                 : 3   of 3  
+test_mystring test5                 : 3   of 3  
+test_mystring test6                 : 3   of 3  
+test_mystring test7                 : 3   of 3  
+test_array test1                    : 3   of 3  
+test_array test2                    : 3   of 3  
+test_array test3                    : 3   of 3  
+test_array test4                    : 3   of 3  
+test_array test5                    : 3   of 3  
+test_array test6                    : 3   of 3  
+test_bits test1                     : 3   of 3  
+test_bits test2                     : 3   of 3  
+test_bits test3                     : 3   of 3  
+test_bits test4                     : 3   of 3  
+test_bits test5                     : 3   of 3  

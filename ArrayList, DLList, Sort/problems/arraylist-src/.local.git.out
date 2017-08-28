@@ -1,0 +1,779 @@
+[master 1accb98] 0 of 100
+ Committer: CS24000 Account <cs240@data.cs.purdue.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 15 files changed, 26 insertions(+), 328 deletions(-)
+ delete mode 100755 problems/irc-server-src/IRCServer
+ delete mode 100644 problems/irc-server-src/diff.out
+ delete mode 100644 problems/irc-server-src/prog.org.out
+ delete mode 100644 problems/irc-server-src/prog.out
+ delete mode 100644 problems/irc-server-src/talk-server.out
+ delete mode 100644 problems/irc-server-src/total.out
+ delete mode 100644 problems/mysort-src/diff.out
+ delete mode 100755 problems/mysort-src/mytest
+ delete mode 100644 problems/mysort-src/mytest.org.out
+ delete mode 100644 problems/mysort-src/mytest.out
+ delete mode 100644 problems/mysort-src/none
+ delete mode 100644 problems/mysort-src/total.out
+ delete mode 100644 problems/mysort-src/total.txt
+[master ed26959] 0 of 100
+ Committer: CS24000 Account <cs240@data.cs.purdue.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+), 5 deletions(-)
+[master 1d17844] 0 of 100
+ Committer: CS24000 Account <cs240@data.cs.purdue.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 9 files changed, 28 insertions(+), 274 deletions(-)
+ delete mode 100755 problems/irc-server-src/IRCServer
+ delete mode 100644 problems/irc-server-src/diff.out
+ delete mode 100644 problems/irc-server-src/prog.org.out
+ delete mode 100644 problems/irc-server-src/prog.out
+ delete mode 100644 problems/irc-server-src/talk-server.out
+ delete mode 100644 problems/irc-server-src/total.out
+[master 1b59e27] 0 of 100
+ Committer: CS24000 Account <cs240@data.cs.purdue.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 3 files changed, 27 insertions(+), 1 deletion(-)
+[master 9374cd9] 0 of 100
+ Committer: CS24000 Account <cs240@data.cs.purdue.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 4 files changed, 20 insertions(+), 1 deletion(-)
+ create mode 100644 problems/arraylist-src/total.out
+[master ab801c8] 0 of 100
+ Committer: CS24000 Account <cs240@data.cs.purdue.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 27 files changed, 21 insertions(+), 1624 deletions(-)
+ delete mode 100644 problems/irc-server-src/.local.git.out
+ delete mode 100644 problems/irc-server-src/.local.total.out
+ delete mode 100644 problems/irc-server-src/IRCServer.cc
+ delete mode 100644 problems/irc-server-src/IRCServer.h
+ delete mode 100755 problems/irc-server-src/IRCServer.org
+ delete mode 100755 problems/irc-server-src/Makefile
+ delete mode 100755 problems/irc-server-src/TestIRCServer
+ delete mode 100644 problems/irc-server-src/none
+ delete mode 100644 problems/irc-server-src/password.txt
+ delete mode 100755 problems/irc-server-src/talk-server
+ delete mode 100755 problems/irc-server-src/test-server1.sh
+ delete mode 100755 problems/irc-server-src/test-server10.sh
+ delete mode 100755 problems/irc-server-src/test-server2.sh
+ delete mode 100755 problems/irc-server-src/test-server3.sh
+ delete mode 100755 problems/irc-server-src/test-server4.sh
+ delete mode 100755 problems/irc-server-src/test-server5.sh
+ delete mode 100755 problems/irc-server-src/test-server6.sh
+ delete mode 100755 problems/irc-server-src/test-server7.sh
+ delete mode 100755 problems/irc-server-src/test-server8.sh
+ delete mode 100755 problems/irc-server-src/test-server9.sh
+ delete mode 100755 problems/irc-server-src/testall
+ delete mode 100644 problems/irc-server-src/total.txt
+[master 22a857e] 0 of 100
+ Committer: CS24000 Account <cs240@data.cs.purdue.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 4 files changed, 46 insertions(+), 3 deletions(-)
+[master 8b5d947] 0 of 100
+ Committer: CS24000 Account <cs240@data.cs.purdue.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 11 files changed, 320 insertions(+), 463 deletions(-)
+ delete mode 100644 problems/arraylist-src/ListTemplate.h
+ delete mode 100755 problems/arraylist-src/ListTemplateTest
+ delete mode 100644 problems/arraylist-src/ListTemplateTest.cc
+ rewrite problems/arraylist-src/Makefile (69%)
+ rewrite problems/dllist-src/DLList.cpp (73%)
+ rewrite problems/dllist-src/DLList.h (62%)
+ rewrite problems/dllist-src/mytest.c (95%)
+On branch master
+
+Initial commit
+
+Untracked files:
+	../
+	../../testall
+	../../tester/
+	../../totalGrade.txt
+
+nothing added to commit but untracked files present
+On branch master
+
+Initial commit
+
+Untracked files:
+	../
+	../../testall
+	../../tester/
+	../../totalGrade.txt
+
+nothing added to commit but untracked files present
+On branch master
+
+Initial commit
+
+Untracked files:
+	../
+	../../testall
+	../../tester/
+	../../totalGrade.txt
+
+nothing added to commit but untracked files present
+On branch master
+
+Initial commit
+
+Untracked files:
+	../
+	../../testall
+	../../tester/
+	../../totalGrade.txt
+
+nothing added to commit but untracked files present
+On branch master
+
+Initial commit
+
+Untracked files:
+	../
+	../../testall
+	../../tester/
+	../../totalGrade.txt
+
+nothing added to commit but untracked files present
+On branch master
+
+Initial commit
+
+Untracked files:
+	../
+	../../testall
+	../../tester/
+	../../totalGrade.txt
+
+nothing added to commit but untracked files present
+On branch master
+
+Initial commit
+
+Untracked files:
+	../
+	../../testall
+	../../tester/
+	../../totalGrade.txt
+
+nothing added to commit but untracked files present
+On branch master
+
+Initial commit
+
+Untracked files:
+	../
+	../../testall
+	../../tester/
+	../../totalGrade.txt
+
+nothing added to commit but untracked files present
+On branch master
+
+Initial commit
+
+Untracked files:
+	../
+	../../testall
+	../../tester/
+	../../totalGrade.txt
+
+nothing added to commit but untracked files present
+On branch master
+
+Initial commit
+
+Untracked files:
+	../
+	../../testall
+	../../tester/
+	../../totalGrade.txt
+
+nothing added to commit but untracked files present
+On branch master
+
+Initial commit
+
+Untracked files:
+	../
+	../../testall
+	../../tester/
+	../../totalGrade.txt
+
+nothing added to commit but untracked files present
+On branch master
+
+Initial commit
+
+Untracked files:
+	../
+	../../testall
+	../../tester/
+	../../totalGrade.txt
+
+nothing added to commit but untracked files present
+On branch master
+
+Initial commit
+
+Untracked files:
+	../
+	../../testall
+	../../tester/
+	../../totalGrade.txt
+
+nothing added to commit but untracked files present
+On branch master
+
+Initial commit
+
+Untracked files:
+	../
+	../../testall
+	../../tester/
+	../../totalGrade.txt
+
+nothing added to commit but untracked files present
+On branch master
+
+Initial commit
+
+Untracked files:
+	../
+	../../testall
+	../../tester/
+	../../totalGrade.txt
+
+nothing added to commit but untracked files present
+On branch master
+
+Initial commit
+
+Untracked files:
+	../../.local.total.out
+	../
+	../../testall
+	../../tester/
+	../../totalGrade.txt
+
+nothing added to commit but untracked files present
+On branch master
+
+Initial commit
+
+Untracked files:
+	../../.local.total.out
+	../
+	../../testall
+	../../tester/
+	../../totalGrade.txt
+
+nothing added to commit but untracked files present
+On branch master
+
+Initial commit
+
+Untracked files:
+	../../.local.total.out
+	../
+	../../testall
+	../../tester/
+	../../totalGrade.txt
+
+nothing added to commit but untracked files present
+On branch master
+
+Initial commit
+
+Untracked files:
+	../../.local.total.out
+	../
+	../../testall
+	../../tester/
+	../../totalGrade.txt
+
+nothing added to commit but untracked files present
+On branch master
+
+Initial commit
+
+Untracked files:
+	../../.local.total.out
+	../
+	../../testall
+	../../tester/
+	../../totalGrade.txt
+
+nothing added to commit but untracked files present
+On branch master
+
+Initial commit
+
+Untracked files:
+	../../.local.total.out
+	../
+	../../testall
+	../../tester/
+	../../totalGrade.txt
+
+nothing added to commit but untracked files present
+On branch master
+
+Initial commit
+
+Untracked files:
+	../../.local.total.out
+	../
+	../../testall
+	../../tester/
+	../../totalGrade.txt
+
+nothing added to commit but untracked files present
+On branch master
+
+Initial commit
+
+Untracked files:
+	../../.local.total.out
+	../
+	../../testall
+	../../tester/
+	../../totalGrade.txt
+
+nothing added to commit but untracked files present
+On branch master
+
+Initial commit
+
+Untracked files:
+	../../.local.total.out
+	../
+	../../testall
+	../../tester/
+	../../totalGrade.txt
+
+nothing added to commit but untracked files present
+[master (root-commit) a5bbf4f] 0 of 100
+ 4 files changed, 698 insertions(+)
+ create mode 100644 problems/arraylist-src/ArrayList.cpp
+ create mode 100644 problems/arraylist-src/ArrayList.h
+ create mode 100644 problems/arraylist-src/mytest.cpp
+ create mode 100644 problems/arraylist-src/total.out
+[master 7dbbcba] 0 of 100
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+[master 23fa466] 0 of 100
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+[master (root-commit) 9f9883a] 0 of 100
+ 4 files changed, 698 insertions(+)
+ create mode 100644 ArrayList.cpp
+ create mode 100644 ArrayList.h
+ create mode 100644 mytest.cpp
+ create mode 100644 total.out
+[master 731a0a5] 0 of 100
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+[lab6_distribute 11f60d0] 0 of 100
+ Committer: CS24000 Account <cs240@data.cs.purdue.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 3 files changed, 9 insertions(+), 6 deletions(-)
+ create mode 100644 lab6-src/problems/arraylist-src/total.out
+[lab6_distribute 878d10c] 0 of 100
+ Committer: CS24000 Account <cs240@data.cs.purdue.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 120 files changed, 27 insertions(+), 11170 deletions(-)
+ delete mode 100644 lab6-src/problems/arraylist-src/Doxyfile
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/_array_list_8cpp.html
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/_array_list_8cpp_source.html
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/_array_list_8h.html
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/_array_list_8h_source.html
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/annotated.html
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/arrowdown.png
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/arrowright.png
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/bc_s.png
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/bdwn.png
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/class_array_list-members.html
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/class_array_list.html
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/classes.html
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/closed.png
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/doc.png
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/doxygen.css
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/doxygen.png
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/dynsections.js
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/files.html
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/folderclosed.png
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/folderopen.png
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/functions.html
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/functions_func.html
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/globals.html
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/globals_func.html
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/index.html
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/jquery.js
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/logo.svg
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/mytest_8cpp.html
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/mytest_8cpp_source.html
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/nav_f.png
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/nav_g.png
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/nav_h.png
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/open.png
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/pages.html
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/search/all_0.html
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/search/all_0.js
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/search/all_1.html
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/search/all_1.js
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/search/all_2.html
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/search/all_2.js
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/search/all_3.html
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/search/all_3.js
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/search/all_4.html
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/search/all_4.js
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/search/all_5.html
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/search/all_5.js
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/search/all_6.html
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/search/all_6.js
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/search/all_7.html
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/search/all_7.js
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/search/all_8.html
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/search/all_8.js
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/search/all_9.html
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/search/all_9.js
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/search/all_a.html
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/search/all_a.js
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/search/classes_0.html
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/search/classes_0.js
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/search/close.png
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/search/files_0.html
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/search/files_0.js
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/search/files_1.html
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/search/files_1.js
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/search/functions_0.html
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/search/functions_0.js
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/search/functions_1.html
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/search/functions_1.js
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/search/functions_2.html
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/search/functions_2.js
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/search/functions_3.html
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/search/functions_3.js
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/search/functions_4.html
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/search/functions_4.js
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/search/functions_5.html
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/search/functions_5.js
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/search/functions_6.html
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/search/functions_6.js
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/search/functions_7.html
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/search/functions_7.js
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/search/functions_8.html
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/search/functions_8.js
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/search/functions_9.html
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/search/functions_9.js
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/search/functions_a.html
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/search/functions_a.js
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/search/mag_sel.png
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/search/nomatches.html
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/search/pages_0.html
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/search/pages_0.js
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/search/search.css
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/search/search.js
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/search/search_l.png
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/search/search_m.png
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/search/search_r.png
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/search/searchdata.js
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/splitbar.png
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/sync_off.png
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/sync_on.png
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/tab_a.png
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/tab_b.png
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/tab_h.png
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/tab_s.png
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/tabs.css
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/html/todo.html
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/latex/Makefile
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/latex/_array_list_8cpp.tex
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/latex/_array_list_8h.tex
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/latex/annotated.tex
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/latex/class_array_list.tex
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/latex/doxygen.sty
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/latex/files.tex
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/latex/mytest_8cpp.tex
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/latex/refman.tex
+ delete mode 100644 lab6-src/problems/arraylist-src/doc/latex/todo.tex
+ rewrite lab6-src/problems/arraylist-src/mytest.org (92%)
+[lab6_distribute 1068cff] 0 of 100
+ Committer: CS24000 Account <cs240@data.cs.purdue.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 5 files changed, 137 insertions(+), 7 deletions(-)
+ delete mode 100755 lab6-src/problems/mysort-src/test_mysort
+[master 8e53317] 0 of 100
+ Committer: Jantsankhorloo Amgalan <jamgalan@data.cs.purdue.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 7 files changed, 380 insertions(+), 451 deletions(-)
+ create mode 100644 problems/arraylist-src/total.out
+ rewrite problems/mysort-src/mysort.c (65%)
+ rewrite problems/mysort-src/mytest.c (77%)
+[master d738900] 10 of 100
+ Committer: Jantsankhorloo Amgalan <jamgalan@data.cs.purdue.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 13 insertions(+), 2 deletions(-)
+[master 62adf5f] 50 of 100
+ Committer: Jantsankhorloo Amgalan <jamgalan@data.cs.purdue.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 34 insertions(+), 2 deletions(-)
+[master 4185904] 50 of 100
+ Committer: Jantsankhorloo Amgalan <jamgalan@data.cs.purdue.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 3 insertions(+), 3 deletions(-)
+[master ae09b94] 50 of 100
+ Committer: Jantsankhorloo Amgalan <jamgalan@data.cs.purdue.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 11 insertions(+), 3 deletions(-)
+[master 862c21a] 50 of 100
+ Committer: Jantsankhorloo Amgalan <jamgalan@data.cs.purdue.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 19 insertions(+), 2 deletions(-)
+[master 6ce5829] 80 of 100
+ Committer: Jantsankhorloo Amgalan <jamgalan@data.cs.purdue.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 36 insertions(+), 3 deletions(-)
+[master ed41ace] 80 of 100
+ Committer: Jantsankhorloo Amgalan <jamgalan@data.cs.purdue.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+[master 61e0f71] 100 of 100
+ Committer: Jantsankhorloo Amgalan <jamgalan@data.cs.purdue.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 3 insertions(+), 3 deletions(-)
+[master bed7a0c] 100 of 100
+ Committer: Jantsankhorloo Amgalan <jamgalan@data.cs.purdue.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+[master 16ade06] 0 of 100
+ 3 files changed, 18 insertions(+), 21 deletions(-)
+ delete mode 100644 problems/dllist-src/total.out

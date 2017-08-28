@@ -1,0 +1,816 @@
+rm -f testmemdump mem convert test_bits
+gcc -std=gnu99 -g -o testmemdump testmemdump.c mymemdump.c obj/orgmemdump.o
+gcc -std=gnu99 -g -o mem mymemdump.c mem.c
+gcc -g -o convert convert.c -lm
+gcc -g -o test_bits test_bits.c bits.c
+======= convert   ===========
+Usage:  convert <basefrom> <baseto> <number>
+Test passed...
+
+======= convert 10  ===========
+Usage:  convert <basefrom> <baseto> <number>
+Test passed...
+
+======= convert 10 10  ===========
+Usage:  convert <basefrom> <baseto> <number>
+Test passed...
+
+======= convert 10 10  ===========
+Usage:  convert <basefrom> <baseto> <number>
+Test passed...
+
+======= convert 10 10 10  ===========
+Number read in base 10: 10
+Converted to base 10: 10
+Converted to base 10: 10
+Test passed...
+
+======= convert 16 10 FF  ===========
+Number read in base 16: FF
+Converted to base 10: 255
+Converted to base 10: 255
+Test passed...
+
+======= convert 16 10 100  ===========
+Number read in base 16: 100
+Converted to base 10: 256
+Converted to base 10: 256
+Test passed...
+
+======= convert 10 8 20  ===========
+Number read in base 10: 20
+Converted to base 10: 20
+Converted to base 8: 24
+Test passed...
+
+======= convert 10 2 127  ===========
+Number read in base 10: 127
+Converted to base 10: 127
+Converted to base 2: 1111111
+Test passed...
+
+======= convert 10 16 8191  ===========
+Number read in base 10: 8191
+Converted to base 10: 8191
+Converted to base 16: 1FFF
+Test passed...
+
+======= convert 10 25 100077900  ===========
+Number read in base 10: 100077900
+Converted to base 10: 100077900
+Converted to base 25: A64OG0
+Test passed...
+
+======= convert 2 16 100010001111  ===========
+Number read in base 2: 100010001111
+Converted to base 10: 2191
+Converted to base 16: 88F
+Test passed...
+
+======= convert 5 10 1234  ===========
+Number read in base 5: 1234
+Converted to base 10: 194
+Converted to base 10: 194
+Test passed...
+
+======= convert 5 10 123456  ===========
+*****Test Failed*****
+------ Your Output ----------
+Number read in base 5: 123456
+Converted to base 10: 4881
+Converted to base 10: 4881
+------ Expected Output ------
+Number read in base 5: 123456
+Wrong digit in number.
+------ Difference -----------
+2,3c2
+< Converted to base 10: 4881
+< Converted to base 10: 4881
+---
+> Wrong digit in number.
+-----------------------------
+
+======= testmemdump 1  ===========
+&a=0x5
+&y=0x7FFEBD8BDEF0
+&x=0x7FFEBD8BDF10
+head=0x1252010
+--------------- Test 1 -------------------
+--------- My Output -------
+0x00000000006020A4: 22 " 
+00 . 00 . 00 . 00 . 00 . 00 . 00 . --------- Expected Output -------
+0x00000000006020A4: 22 00 00 00 00 00 00 00                          ".......
+---------------------------------
+Output is different...
+***** Test 1 Failed
+*****Test Failed*****
+
+======= testmemdump 2  ===========
+&a=0x5
+&y=0x7FFC0E8E19A0
+&x=0x7FFC0E8E19C0
+head=0x2133010
+--------------- Test 2 -------------------
+--------- My Output -------
+0x00000000004009A9: 55 U 
+48 H 89 â E5 Â 53 S 48 H 81 Å EC Ï 88 à 00 . 00 . 00 . 89 â BD Ω 7C | FF ˇ FF ˇ 
+FF ˇ 48 H 89 â --------- Expected Output -------
+0x00000000004009A9: 55 48 89 E5 53 48 81 EC 88 00 00 00 89 BD 7C FF  UH..SH........|.
+0x00000000004009B9: FF FF 48 89                                      ..H.
+---------------------------------
+Output is different...
+***** Test 2 Failed
+*****Test Failed*****
+
+======= testmemdump 3  ===========
+&a=0x5
+&y=0x7FFF5CBB3DD0
+&x=0x7FFF5CBB3DF0
+head=0xb0f010
+--------------- Test 3 -------------------
+--------- My Output -------
+0x00007FFF5CBB3E10: 48 H 
+65 e 6C l 6C l 6F o 20   77 w 6F o 72 r 6C l 64 d 0A . 00 . 00 . 00 . 00 . D0 – 
+0F . 40 @ 00 . 00 . 00 . 00 . 00 . 00 . D4 ‘ C6 ∆ 69 i 9F ü EF Ô 21 ! 7A z --------- Expected Output -------
+0x00007FFF5CBB3E10: 48 65 6C 6C 6F 20 77 6F 72 6C 64 0A 00 00 00 00  Hello world.....
+0x00007FFF5CBB3E20: D0 0F 40 00 00 00 00 00 00 D4 C6 69 9F EF 21 7A  ..@........i..!z
+---------------------------------
+Output is different...
+***** Test 3 Failed
+*****Test Failed*****
+
+======= testmemdump 4  ===========
+&a=0x5
+&y=0x7FFD6BE831E0
+&x=0x7FFD6BE83200
+head=0x1b4c010
+--------------- Test 4 -------------------
+--------- My Output -------
+0x00007FFD6BE831E0: 00 . 
+00 . 00 . 00 . 00 . 00 . 28 ( 40 @ --------- Expected Output -------
+0x00007FFD6BE831E0: 00 00 00 00 00 00 28 40                          ......(@
+---------------------------------
+Output is different...
+***** Test 4 Failed
+*****Test Failed*****
+
+======= testmemdump 5  ===========
+&a=0x5
+&y=0x7FFEE5B5B030
+&x=0x7FFEE5B5B050
+head=0x1413010
+--------------- Test 5 -------------------
+--------- My Output -------
+0x0000000001413010: 30 0 
+30 0 41 A 01 . 00 . 00 . 00 . 00 . 50 P 30 0 41 A 01 . 00 . 00 . 00 . 00 . 00 . 
+00 . 00 . 00 . 00 . 00 . 00 . 00 . 21 ! 00 . 00 . 00 . 00 . 00 . 00 . 00 . 57 W 
+65 e 6C l 63 c 6F o 6D m 65 e 20   00 . 00 . 00 . 00 . 00 . 00 . 00 . 00 . 00 . 
+00 . 00 . 00 . 00 . 00 . 00 . 00 . 21 ! 00 . 00 . 00 . 00 . 00 . 00 . 00 . 70 p 
+30 0 41 A 01 . 00 . 00 . 00 . 00 . 90 ê 30 0 41 A 01 . 00 . 00 . 00 . 00 . 00 . 
+00 . 00 . 00 . 00 . 00 . 00 . 00 . 21 ! 00 . 00 . 00 . 00 . 00 . 00 . 00 . 74 t 
+6F o 20   00 . 00 . 00 . 00 . 00 . 00 . 00 . 00 . 00 . 00 . 00 . 00 . 00 . 00 . 
+00 . 00 . 00 . 00 . 00 . 00 . 00 . 21 ! 00 . 00 . 00 . 00 . 00 . 00 . 00 . --------- Expected Output -------
+0x0000000001413010: 30 30 41 01 00 00 00 00 50 30 41 01 00 00 00 00  00A.....P0A.....
+0x0000000001413020: 00 00 00 00 00 00 00 00 21 00 00 00 00 00 00 00  ........!.......
+0x0000000001413030: 57 65 6C 63 6F 6D 65 20 00 00 00 00 00 00 00 00  Welcome ........
+0x0000000001413040: 00 00 00 00 00 00 00 00 21 00 00 00 00 00 00 00  ........!.......
+0x0000000001413050: 70 30 41 01 00 00 00 00 90 30 41 01 00 00 00 00  p0A......0A.....
+0x0000000001413060: 00 00 00 00 00 00 00 00 21 00 00 00 00 00 00 00  ........!.......
+0x0000000001413070: 74 6F 20 00 00 00 00 00 00 00 00 00 00 00 00 00  to .............
+0x0000000001413080: 00 00 00 00 00 00 00 00 21 00 00 00 00 00 00 00  ........!.......
+---------------------------------
+Output is different...
+***** Test 5 Failed
+*****Test Failed*****
+
+======= test_mystring test1  ===========
+*****Test Failed*****
+------ Your Output ----------
+Running test1
+mystrlen("Hello world")=0
+mystrlen("CS240 Programming in C")=0
+mystrlen("")=0
+------ Expected Output ------
+Running test1
+mystrlen("Hello world")=11
+mystrlen("CS240 Programming in C")=22
+mystrlen("")=0
+------ Difference -----------
+2,3c2,3
+< mystrlen("Hello world")=0
+< mystrlen("CS240 Programming in C")=0
+---
+> mystrlen("Hello world")=11
+> mystrlen("CS240 Programming in C")=22
+-----------------------------
+
+======= test_mystring test2  ===========
+*****Test Failed*****
+------ Your Output ----------
+Running test2
+"–@=k¸"
+"(null)"
+"–@=k¸"
+"(null)"
+------ Expected Output ------
+Running test2
+"Hello world"
+"Hello world"
+""
+""
+------ Difference -----------
+2,5c2,5
+< "–@=k¸"
+< "(null)"
+< "–@=k¸"
+< "(null)"
+---
+> "Hello world"
+> "Hello world"
+> ""
+> ""
+-----------------------------
+
+======= test_mystring test3  ===========
+*****Test Failed*****
+------ Your Output ----------
+Running test3
+"–A∫˝"
+"(null)"
+"–A∫˝"
+"(null)"
+------ Expected Output ------
+Running test3
+"Hello world, CS240 C Programming, This is a great course"
+"Hello world, CS240 C Programming, This is a great course"
+"Hello"
+"Hello"
+------ Difference -----------
+2,5c2,5
+< "–A∫˝"
+< "(null)"
+< "–A∫˝"
+< "(null)"
+---
+> "Hello world, CS240 C Programming, This is a great course"
+> "Hello world, CS240 C Programming, This is a great course"
+> "Hello"
+> "Hello"
+-----------------------------
+
+======= test_mystring test4  ===========
+*****Test Failed*****
+------ Your Output ----------
+Running test4
+mystrcmp("banana", "apple")=-1
+mystrcmp("apple", "banana")=-1
+mystrcmp("appleapple", "applebanana")=-1
+mystrcmp("applebanana", "appleapple")=-1
+mystrcmp("apple", "apple")=-1
+mystrcmp("appleapple", "apple")=-1
+mystrcmp("apple", "applebanana")=-1
+mystrcmp("applebanana", "apple")=-1
+------ Expected Output ------
+Running test4
+mystrcmp("banana", "apple")=1
+mystrcmp("apple", "banana")=-1
+mystrcmp("appleapple", "applebanana")=-1
+mystrcmp("applebanana", "appleapple")=1
+mystrcmp("apple", "apple")=0
+mystrcmp("appleapple", "apple")=1
+mystrcmp("apple", "applebanana")=-1
+mystrcmp("applebanana", "apple")=1
+------ Difference -----------
+2c2
+< mystrcmp("banana", "apple")=-1
+---
+> mystrcmp("banana", "apple")=1
+5,7c5,7
+< mystrcmp("applebanana", "appleapple")=-1
+< mystrcmp("apple", "apple")=-1
+< mystrcmp("appleapple", "apple")=-1
+---
+> mystrcmp("applebanana", "appleapple")=1
+> mystrcmp("apple", "apple")=0
+> mystrcmp("appleapple", "apple")=1
+9c9
+< mystrcmp("applebanana", "apple")=-1
+---
+> mystrcmp("applebanana", "apple")=1
+-----------------------------
+
+======= test_mystring test5  ===========
+*****Test Failed*****
+------ Your Output ----------
+Running test5
+mystrstr("Hello world. CS240","ld")="NULL"
+mystrstr("Hello world. CS240","llo")="NULL"
+mystrstr("Hello world. CS240","CS251")="NULL"
+mystrstr("CS240","Hello world. CS240")="NULL"
+------ Expected Output ------
+Running test5
+mystrstr("Hello world. CS240","ld")="ld. CS240"
+mystrstr("Hello world. CS240","llo")="llo world. CS240"
+mystrstr("Hello world. CS240","CS251")="NULL"
+mystrstr("CS240","Hello world. CS240")="NULL"
+------ Difference -----------
+2,3c2,3
+< mystrstr("Hello world. CS240","ld")="NULL"
+< mystrstr("Hello world. CS240","llo")="NULL"
+---
+> mystrstr("Hello world. CS240","ld")="ld. CS240"
+> mystrstr("Hello world. CS240","llo")="llo world. CS240"
+-----------------------------
+
+======= test_mystring test6  ===========
+*****Test Failed*****
+------ Your Output ----------
+Running test6
+q="(null)"
+(q==p) = 0
+q="(null)"
+(q==p) = 1
+q="(null)"
+(q==p) = 1
+q="(null)"
+(q==p) = 1
+q="(null)"
+(q==p) = 1
+q="(null)"
+(q==p) = 1
+q="(null)"
+(q==p) = 1
+q="(null)"
+(q==p) = 1
+q="(null)"
+(q==p) = 1
+q="(null)"
+(q==p) = 1
+q="(null)"
+------ Expected Output ------
+Running test6
+q="Hello"
+(q==p) = 0
+q="Hello"
+(q==p) = 0
+q="Hello"
+(q==p) = 0
+q="Hello"
+(q==p) = 0
+q="Hello"
+(q==p) = 0
+q="Hello"
+(q==p) = 0
+q="Hello"
+(q==p) = 0
+q="Hello"
+(q==p) = 0
+q="Hello"
+(q==p) = 0
+q="Hello"
+(q==p) = 0
+q="Hello"
+------ Difference -----------
+2c2
+< q="(null)"
+---
+> q="Hello"
+4,22c4,22
+< q="(null)"
+< (q==p) = 1
+< q="(null)"
+< (q==p) = 1
+< q="(null)"
+< (q==p) = 1
+< q="(null)"
+< (q==p) = 1
+< q="(null)"
+< (q==p) = 1
+< q="(null)"
+< (q==p) = 1
+< q="(null)"
+< (q==p) = 1
+< q="(null)"
+< (q==p) = 1
+< q="(null)"
+< (q==p) = 1
+< q="(null)"
+---
+> q="Hello"
+> (q==p) = 0
+> q="Hello"
+> (q==p) = 0
+> q="Hello"
+> (q==p) = 0
+> q="Hello"
+> (q==p) = 0
+> q="Hello"
+> (q==p) = 0
+> q="Hello"
+> (q==p) = 0
+> q="Hello"
+> (q==p) = 0
+> q="Hello"
+> (q==p) = 0
+> q="Hello"
+> (q==p) = 0
+> q="Hello"
+-----------------------------
+
+======= test_mystring test7  ===========
+*****Test Failed*****
+------ Your Output ----------
+Running test7
+q="¿◊ƒÿô"
+------ Expected Output ------
+Running test7
+q="Hello world"
+------ Difference -----------
+2c2
+< q="¿◊ƒÿô"
+---
+> q="Hello world"
+-----------------------------
+
+======= test_array test1  ===========
+Running test1
+sumArray=64.000000
+Test passed...
+
+======= test_array test2  ===========
+*****Test Failed*****
+------ Your Output ----------
+Running test2
+maxArray=0.000000
+------ Expected Output ------
+Running test2
+maxArray=12.000000
+------ Difference -----------
+2c2
+< maxArray=0.000000
+---
+> maxArray=12.000000
+-----------------------------
+
+======= test_array test3  ===========
+*****Test Failed*****
+------ Your Output ----------
+Running test3
+minArray=0.000000
+------ Expected Output ------
+Running test3
+minArray=-1.000000
+------ Difference -----------
+2c2
+< minArray=0.000000
+---
+> minArray=-1.000000
+-----------------------------
+
+======= test_array test4  ===========
+*****Test Failed*****
+------ Your Output ----------
+Running test4
+findArray=-1
+------ Expected Output ------
+Running test4
+findArray=6
+------ Difference -----------
+2c2
+< findArray=-1
+---
+> findArray=6
+-----------------------------
+
+======= test_array test5  ===========
+*****Test Failed*****
+------ Your Output ----------
+Running test5
+------ Expected Output ------
+Running test5
+0:4.000000
+1:7.000000
+2:2.000000
+3:6.000000
+4:1.000000
+5:8.000000
+6:9.000000
+7:2.000000
+8:11.000000
+9:-1.000000
+10:3.000000
+11:12.000000
+------ Difference -----------
+1a2,13
+> 0:4.000000
+> 1:7.000000
+> 2:2.000000
+> 3:6.000000
+> 4:1.000000
+> 5:8.000000
+> 6:9.000000
+> 7:2.000000
+> 8:11.000000
+> 9:-1.000000
+> 10:3.000000
+> 11:12.000000
+-----------------------------
+
+======= test_array test6  ===========
+*****Test Failed*****
+------ Your Output ----------
+Running test6
+-----------
+------ Expected Output ------
+Running test6
+0:4.000000
+1:7.000000
+2:2.000000
+3:6.000000
+4:1.000000
+5:8.000000
+6:9.000000
+7:2.000000
+8:11.000000
+9:-1.000000
+10:3.000000
+11:12.000000
+-----------
+0:-1.000000
+1:1.000000
+2:2.000000
+3:2.000000
+4:3.000000
+5:4.000000
+6:6.000000
+7:7.000000
+8:8.000000
+9:9.000000
+10:11.000000
+11:12.000000
+------ Difference -----------
+1a2,13
+> 0:4.000000
+> 1:7.000000
+> 2:2.000000
+> 3:6.000000
+> 4:1.000000
+> 5:8.000000
+> 6:9.000000
+> 7:2.000000
+> 8:11.000000
+> 9:-1.000000
+> 10:3.000000
+> 11:12.000000
+2a15,26
+> 0:-1.000000
+> 1:1.000000
+> 2:2.000000
+> 3:2.000000
+> 4:3.000000
+> 5:4.000000
+> 6:6.000000
+> 7:7.000000
+> 8:8.000000
+> 9:9.000000
+> 10:11.000000
+> 11:12.000000
+-----------------------------
+
+======= test_bits test1  ===========
+*****Test Failed*****
+------ Your Output ----------
+a:
+b:
+a&b:
+a|b:
+a^b:
+~a:
+------ Expected Output ------
+a:
+00000000000000000000000000001001
+10987654321098765432109876543210
+b:
+00000000000000000000000000000011
+10987654321098765432109876543210
+a&b:
+00000000000000000000000000000001
+10987654321098765432109876543210
+a|b:
+00000000000000000000000000001011
+10987654321098765432109876543210
+a^b:
+00000000000000000000000000001010
+10987654321098765432109876543210
+~a:
+11111111111111111111111111110110
+10987654321098765432109876543210
+------ Difference -----------
+1a2,3
+> 00000000000000000000000000001001
+> 10987654321098765432109876543210
+2a5,6
+> 00000000000000000000000000000011
+> 10987654321098765432109876543210
+3a8,9
+> 00000000000000000000000000000001
+> 10987654321098765432109876543210
+4a11,12
+> 00000000000000000000000000001011
+> 10987654321098765432109876543210
+5a14,15
+> 00000000000000000000000000001010
+> 10987654321098765432109876543210
+6a17,18
+> 11111111111111111111111111110110
+> 10987654321098765432109876543210
+-----------------------------
+
+======= test_bits test2  ===========
+*****Test Failed*****
+------ Your Output ----------
+a:
+a after setBitAt(&a,10,1):
+a after setBitAt(&a,20,1):
+a after setBitAt(&a,0,0):
+a after setBitAt(&a,3,0):
+------ Expected Output ------
+a:
+00000000000000000000000000001001
+10987654321098765432109876543210
+a after setBitAt(&a,10,1):
+00000000000000000000010000001001
+10987654321098765432109876543210
+a after setBitAt(&a,20,1):
+00000000000100000000010000001001
+10987654321098765432109876543210
+a after setBitAt(&a,0,0):
+00000000000100000000010000001000
+10987654321098765432109876543210
+a after setBitAt(&a,3,0):
+00000000000100000000010000000000
+10987654321098765432109876543210
+------ Difference -----------
+1a2,3
+> 00000000000000000000000000001001
+> 10987654321098765432109876543210
+2a5,6
+> 00000000000000000000010000001001
+> 10987654321098765432109876543210
+3a8,9
+> 00000000000100000000010000001001
+> 10987654321098765432109876543210
+4a11,12
+> 00000000000100000000010000001000
+> 10987654321098765432109876543210
+5a14,15
+> 00000000000100000000010000000000
+> 10987654321098765432109876543210
+-----------------------------
+
+======= test_bits test3  ===========
+*****Test Failed*****
+------ Your Output ----------
+a:
+getBitAt(3)=-61431
+getBitAt(10)=-61431
+getBitAt(20)=-61431
+getBitAt(5)=-61431
+------ Expected Output ------
+a:
+11111111111111110001000000001001
+10987654321098765432109876543210
+getBitAt(3)=1
+getBitAt(10)=0
+getBitAt(20)=1
+getBitAt(5)=0
+------ Difference -----------
+2,5c2,7
+< getBitAt(3)=-61431
+< getBitAt(10)=-61431
+< getBitAt(20)=-61431
+< getBitAt(5)=-61431
+---
+> 11111111111111110001000000001001
+> 10987654321098765432109876543210
+> getBitAt(3)=1
+> getBitAt(10)=0
+> getBitAt(20)=1
+> getBitAt(5)=0
+-----------------------------
+
+======= test_bits test4  ===========
+*****Test Failed*****
+------ Your Output ----------
+a:
+countBits(a,1)=1864654834
+countBits(a,0)=1864654834
+b:
+countBits(b,1)=2137522057
+countBits(b,0)=2137522057
+------ Expected Output ------
+a:
+01101111001001000101111111110010
+10987654321098765432109876543210
+countBits(a,1)=19
+countBits(a,0)=13
+b:
+01111111011001111111111110001001
+10987654321098765432109876543210
+countBits(b,1)=23
+countBits(b,0)=9
+------ Difference -----------
+2,3c2,5
+< countBits(a,1)=1864654834
+< countBits(a,0)=1864654834
+---
+> 01101111001001000101111111110010
+> 10987654321098765432109876543210
+> countBits(a,1)=19
+> countBits(a,0)=13
+5,6c7,10
+< countBits(b,1)=2137522057
+< countBits(b,0)=2137522057
+---
+> 01111111011001111111111110001001
+> 10987654321098765432109876543210
+> countBits(b,1)=23
+> countBits(b,0)=9
+-----------------------------
+
+======= test_bits test5  ===========
+*****Test Failed*****
+------ Your Output ----------
+a:
+maxContinuousOnes(a, &pos)=1877237650 pos=846192832
+b:
+maxContinuousOnes(b, &pos)=2137522057 pos=846192832
+------ Expected Output ------
+a:
+01101111111001000101111110010010
+10987654321098765432109876543210
+maxContinuousOnes(a, &pos)=7 pos=21
+b:
+01111111011001111111111110001001
+10987654321098765432109876543210
+maxContinuousOnes(b, &pos)=12 pos=7
+------ Difference -----------
+2c2,4
+< maxContinuousOnes(a, &pos)=1877237650 pos=846192832
+---
+> 01101111111001000101111110010010
+> 10987654321098765432109876543210
+> maxContinuousOnes(a, &pos)=7 pos=21
+4c6,8
+< maxContinuousOnes(b, &pos)=2137522057 pos=846192832
+---
+> 01111111011001111111111110001001
+> 10987654321098765432109876543210
+> maxContinuousOnes(b, &pos)=12 pos=7
+-----------------------------
+
+
+
+-------------------------------------------------
+CS240: lab4. jamgalan   
+-------------------------------------------------
+convert                             : 2   of 2  
+convert 10                          : 2   of 2  
+convert 10 10                       : 2   of 2  
+convert 10 10                       : 2   of 2  
+convert 10 10 10                    : 2   of 2  
+convert 16 10 FF                    : 2   of 2  
+convert 16 10 100                   : 2   of 2  
+convert 10 8 20                     : 2   of 2  
+convert 10 2 127                    : 2   of 2  
+convert 10 16 8191                  : 2   of 2  
+convert 10 25 100077900             : 2   of 2  
+convert 2 16 100010001111           : 2   of 2  
+convert 5 10 1234                   : 2   of 2  
+convert 5 10 123456                 : 0   of 2  
+testmemdump 1                       : 0   of 4  
+testmemdump 2                       : 0   of 4  
+testmemdump 3                       : 0   of 4  
+testmemdump 4                       : 0   of 3  
+testmemdump 5                       : 0   of 3  
+test_mystring test1                 : 0   of 3  
+test_mystring test2                 : 0   of 3  
+test_mystring test3                 : 0   of 3  
+test_mystring test4                 : 0   of 3  
+test_mystring test5                 : 0   of 3  
+test_mystring test6                 : 0   of 3  
+test_mystring test7                 : 0   of 3  
+test_array test1                    : 3   of 3  
+test_array test2                    : 0   of 3  
+test_array test3                    : 0   of 3  
+test_array test4                    : 0   of 3  
+test_array test5                    : 0   of 3  
+test_array test6                    : 0   of 3  
+test_bits test1                     : 0   of 3  
+test_bits test2                     : 0   of 3  
+test_bits test3                     : 0   of 3  
+test_bits test4                     : 0   of 3  
+test_bits test5                     : 0   of 3  
+-------------------------------------------------
+CS240: lab4. jamgalan Thu Oct 1 13:50:13 EDT 2015  Total:  29 of 100
+
